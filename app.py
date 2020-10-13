@@ -42,9 +42,11 @@ def emit_all_addresses(channel):
         'allAddresses': all_addresses
     })
 
+users_total=[]
 @socketio.on('connect')
 def on_connect():
-    print('Someone connected!')
+    users_total.append('connect')
+    userTotal=len(users_total)
     socketio.emit('connected', {
         'test': 'Connected'
     })
