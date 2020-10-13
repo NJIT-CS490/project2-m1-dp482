@@ -53,10 +53,14 @@ def on_connect():
     
     emit_all_addresses(ADDRESSES_RECEIVED_CHANNEL)
 
-
 @socketio.on('disconnect')
 def on_disconnect():
-    print ('Someone disconnected!')
+    connectSucc='connect'
+    users_total.remove(connectSucc)
+    userTotal=len(users_total)
+    socketio.emit('disconnected', {
+        'test': userTotal
+    })
 
 @socketio.on('new address input')
 def on_new_address(data):

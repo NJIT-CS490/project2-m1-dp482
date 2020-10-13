@@ -28,6 +28,16 @@ export function Content() {
         });
     }
     getUsersCount();
+    
+    function getUsersCount1() {
+        React.useEffect(() => {
+            Socket.on('disconnected', (data) => {
+                console.log("Received addresses from server for disconnect: " + data['test']);
+                setUsersCount(data['test']);
+            })
+        });
+    }
+    getUsersCount1();
 
     return (
         <div>
