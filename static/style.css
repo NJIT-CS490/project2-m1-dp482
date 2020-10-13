@@ -22,4 +22,12 @@ ol {
     width: 50%;
     height: 460px;
     border: 4px solid black;
+    overflow: scroll;
+}
+
+p{
+    position: fixed;
+    left:370px;
+    bottom: 150px;
+    font-size:15pt;
 }
