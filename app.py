@@ -48,7 +48,7 @@ def on_connect():
     users_total.append('connect')
     userTotal=len(users_total)
     socketio.emit('connected', {
-        'test': 'Connected'
+        'test': userTotal
     })
     
     emit_all_addresses(ADDRESSES_RECEIVED_CHANNEL)

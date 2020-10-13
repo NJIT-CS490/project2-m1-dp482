@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to bottom right, orange, red);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    position: fixed;
+    left:0px;
+}
+

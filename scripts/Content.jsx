@@ -41,7 +41,7 @@ export function Content() {
 
     return (
         <div>
-            <h1>USPS Addresses!</h1>
+            <h1>Welcome To Text+</h1>
             <h2><b> Total users: {UsersCount}  </b></h2>
                 <ol>
                     {
