@@ -31,3 +31,27 @@ p{
     bottom: 150px;
     font-size:15pt;
 }
+
+input[id=user_input]{
+    position: fixed;
+    left:470px;
+    bottom: 165px;
+    padding: 5px;
+    font-size:10pt;
+}
+
+input[id=message_input]{
+    position: fixed;
+    left:370px;
+    bottom: 110px;
+    font-size:17pt;
+    width:500px;
+    
+    
+}
+button{
+  position: fixed;
+  left:880px;
+  bottom: 111px; 
+  font-size:14pt;
+}
