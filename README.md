@@ -44,6 +44,9 @@ Technical issues
 1.	The first issue that I faced was user counts. In beginning, the app was adding users even If I was refreshing the same page and the second issue was the number of users was not decreasing after disconnecting the app. I was able to solve this issue by using online sources. 
 2.	The second issue that I faced was the Npm run watch. Every time I tried running the npm run watch I ended up getting an error because I didn’t have the node_modules file. I was able to solve this issue by installing Npm stuff using lect11-starter. 
 3.	The last and crucial issue that I had was pushing the application to Heroku. The files were successfully uploaded to Heroku, but it always threw two errors between the process. I was able to solve this issue by following the lect11 YouTube video for more than five times. Second, I had to create three different GitHub repo because I didn’t want to mess up the main repo.
+
+
+
 The issue that still exists:
 1.	I am still having an issue with the Chatbot. For to use the Chatbot you would have to use the fixed username which was hardcoded in the python file. The best way to get the solution is to contact the following: group members/TA/Professor. 
  
