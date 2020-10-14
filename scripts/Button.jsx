@@ -9,7 +9,7 @@ function handleSubmit(event) {
     });
     newMessage.value
     
-    console.log('Sent the address ' + newMessage.value + ' to server!');
+    console.log('Sent the message ' + newMessage.value + ' to server!');
     newMessage.value = ''
     
     event.preventDefault();

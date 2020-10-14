@@ -16,12 +16,7 @@ socketio.init_app(app, cors_allowed_origins="*")
 dotenv_path = join(dirname(__file__), 'sql.env')
 load_dotenv(dotenv_path)
 
-sql_user = os.environ['SQL_USER']
-sql_pwd = os.environ['SQL_PASSWORD']
-dbuser = os.environ['USER']
-
-database_uri = 'postgresql://{}:{}@localhost/postgres'.format(
-    sql_user, sql_pwd)
+database_uri = os.environ['DATABASE_URL']
 
 app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
 
@@ -64,7 +59,7 @@ def on_disconnect():
 
 @socketio.on('new address input')
 def on_new_address(data):
-    print("Got an event for new address input with data:", data)
+    print("Got new message input with data:", data)
     
     db.session.add(models.Usps(data["address"]));
     

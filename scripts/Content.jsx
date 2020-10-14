@@ -12,7 +12,7 @@ export function Content() {
     function getNewAddresses() {
         React.useEffect(() => {
             Socket.on('addresses received', (data) => {
-                 console.log("Received addresses from server: " + data['allAddresses']);
+                 console.log("Received message from server: " + data['allAddresses']);
                  setAddresses(data['allAddresses']);
             })
         });
@@ -22,7 +22,7 @@ export function Content() {
     function getUsersNumberC() {
         React.useEffect(() => {
             Socket.on('connected', (data) => {
-                 console.log("Received addresses from server: " + data['test']);
+                 console.log("Received connected from server: " + data['test']);
                  setUsersNumber(data['test']);
             })
         });
@@ -33,7 +33,7 @@ export function Content() {
      function getUsersNumberD() {
         React.useEffect(() => {
             Socket.on('disconnected', (data) => {
-                console.log("Received addresses from server for disconnect: " + data['test']);
+                console.log("Received disconnected from server: " + data['test']);
                 setUsersNumber(data['test']);
             })
         });
