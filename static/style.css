@@ -55,3 +55,10 @@ button{
   bottom: 111px; 
   font-size:14pt;
 }
+
+p1{
+    position: fixed;
+    left:370px;
+    bottom: 60px;
+    font-size:15pt;
+}

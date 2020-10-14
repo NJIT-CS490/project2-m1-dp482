@@ -7,7 +7,7 @@ import { Socket } from './Socket';
 
 export function Content() {
     const [addresses, setAddresses] = React.useState([]);
-    const [ UsersCount, setUsersCount] = React.useState([]);
+    const [ UsersNumber, setUsersNumber] = React.useState([]);
     
     function getNewAddresses() {
         React.useEffect(() => {
@@ -19,30 +19,32 @@ export function Content() {
     }
     getNewAddresses();
     
-    function getUsersCount() {
+    function getUsersNumberC() {
         React.useEffect(() => {
             Socket.on('connected', (data) => {
                  console.log("Received addresses from server: " + data['test']);
-                 setUsersCount(data['test']);
+                 setUsersNumber(data['test']);
             })
         });
     }
-    getUsersCount();
+    getUsersNumberC();
     
-    function getUsersCount1() {
+    
+     function getUsersNumberD() {
         React.useEffect(() => {
             Socket.on('disconnected', (data) => {
                 console.log("Received addresses from server for disconnect: " + data['test']);
-                setUsersCount(data['test']);
+                setUsersNumber(data['test']);
             })
         });
     }
-    getUsersCount1();
+    getUsersNumberD();
 
     return (
         <div>
             <h1>Welcome To Text+</h1>
-            <h2><b> Total users: {UsersCount}  </b></h2>
+            <h2><b> Total users: {UsersNumber}  </b></h2>
+            <p1>Attention! To explore chatbot (Username= Hari, Message = e.g !! about)</p1>
                 <ol>
                     {
                     addresses.map(
