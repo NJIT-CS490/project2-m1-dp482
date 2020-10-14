@@ -49,7 +49,7 @@ export function Content() {
                     {
                     addresses.map(
                         (address, index)=> 
-                        <li key={index}>{address} </li>
+                        <div key={index}>{address} </div>
                         )
                     }
                 </ol>
