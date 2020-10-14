@@ -9,9 +9,9 @@
 - npm install socket.io-client --save
 
 3) Set up PSQL
-Make a sql.env file in your direcotry with (SQL_USER, SQL_PASSWORD). Don't forget to add sql.env file to .gitignore
+Make a sql.env file in your directory with (SQL_USER, SQL_PASSWORD). Don't forget to add sql.env file to .gitignore
 
-4) Write a Code that keep track of Users (Connect/Disconnect)
+4) Write a Code that keeps track of Users (Connect/Disconnect)
 5) Write a Code for Chatbot
 6) Write a Code for message/username input and button
 7) Add CSS file to Design you work
@@ -37,7 +37,7 @@ Make a sql.env file in your direcotry with (SQL_USER, SQL_PASSWORD). Don't forge
 
 12) Link to Heroku
 - create Heroku
-- git push heorku main
+- git push Heroku main
 
 
 Technical issues
