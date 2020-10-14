@@ -67,6 +67,15 @@ def on_new_address(data):
     print("Got an event for new address input with data:", data)
     
     db.session.add(models.Usps(data["address"]));
+    
+    if data["address"] == "Hari:!! about":
+        text="Bot: Welcome to Text+ change your username to enjoy chatting";
+        db.session.add(models.Usps(text));
+        
+    if data["address"] == "Hari:!! help":
+        text="Bot: Use different commands to explore (!! about, !! help, !! funtranslate)";
+        db.session.add(models.Usps(text));
+    
     db.session.commit();
     
     emit_all_addresses(ADDRESSES_RECEIVED_CHANNEL)
